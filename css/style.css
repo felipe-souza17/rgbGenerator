@@ -1,0 +1,70 @@
+:root {
+  --dark-gray: #2e2e2e;
+  --gray: #444444;
+  --desatured-gray: #e2e2e2;
+  --light-gray: #cccccc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Mono', monospace;
+}
+body {
+  margin: 15vh auto;
+  width: 70%;
+  background-color: var(--dark-gray);
+  color: white;
+}
+/* Header */
+header h1 {
+  text-align: center;
+  font-size: 45px;
+}
+.timer {
+  background-color: var(--gray);
+  padding: 15px;
+  margin: 25px 0;
+  font-weight: 600;
+}
+
+/* Main */
+main {
+  background-color: var(--gray);
+  padding: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+.inputs {
+  display: flex;
+  justify-content: space-around;
+}
+.input {
+  border-radius: 5px;
+  padding: 15px;
+}
+.input:nth-child(1) {
+  background-color: #db6161;
+}
+.input:nth-child(2) {
+  background-color: #79db61;
+}
+.input:nth-child(3) {
+  background-color: #618fdb;
+}
+
+.square {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.404);
+  background-color: #0a5baa;
+  margin: 35px auto;
+}
+
+/* Footer */
+footer {
+  margin: 30px;
+  text-align: center;
+  font-weight: 600;
+}

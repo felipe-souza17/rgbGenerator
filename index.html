@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGB Generator</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/bfcd5f93fa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Gerador RGB</h1>
+      <div id="timer" class="timer">
+        <div class="date" id="dateNow">
+          <i class="fas fa-eye-dropper"></i>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="inputs">
+        <div class="input">
+          <input
+            type="range"
+            oninput="rgbGenerator()"
+            id="red"
+            min="0"
+            max="255"
+          />
+        </div>
+
+        <div class="input">
+          <input
+            type="range"
+            oninput="rgbGenerator()"
+            id="green"
+            min="0"
+            max="255"
+          />
+        </div>
+        <div class="input">
+          <input
+            type="range"
+            oninput="rgbGenerator()"
+            id="blue"
+            min="0"
+            max="255"
+          />
+        </div>
+      </div>
+      <div id="square" class="square"></div>
+      <div id="result">rgb(10, 91, 170)</div>
+    </main>
+    <footer>Desenvolvido por Felipe R. Souza 💻</footer>
+  </body>
+  <script src="js/main.js"></script>
+</html>
